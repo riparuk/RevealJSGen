@@ -1,4 +1,4 @@
-# Revealjs-Gen
+# RevealMDGen
 > A simple markdown generator for revealjs presentations using GPT OpenAI API
 > Still in development!
 
@@ -11,37 +11,37 @@ see [playground.ts](playground.ts) for how to use the generator
 
 ### Example usage for generating fresh slides
 ```typescript
-import RevealJSGen from './src/RevealJSGen';
+import RevealMDGen from './src/RevealMDGen';
 import fs from 'fs';
 
-// create RevealJSGen instance
-const revealJSGen = new RevealJSGen();
+// create RevealMDGen instance
+const revealMDGen = new RevealMDGen();
 
 // generate slides
-revealJSGen.generateSlides("buat slide tentang kemerdekaan indonesia 45").then(() => {
+revealMDGen.generateSlides("buat slide tentang kemerdekaan indonesia 45").then(() => {
   // write/save generated to markdown file
   const fs = require('fs');
-  fs.writeFileSync('slides.md', revealJSGen.getActionManager().getSlidesGenerator().getSlides().getRawContent());
+  fs.writeFileSync('slides.md', revealMDGen.getActionManager().getSlidesGenerator().getSlides().getRawContent());
 });
 
 ```
 
 ### Example usage for edit existing slides
 ```typescript
-import RevealJSGen from './src/RevealJSGen';
+import RevealMDGen from './src/RevealMDGen';
 import fs from 'fs';
 
-const revealJSGen = new RevealJSGen();
+const revealMDGen = new RevealMDGen();
 
 // load existing slides from markdown file
-revealJSGen.getActionManager().getSlidesGenerator().getSlides().extractSlides(fs.readFileSync('slides.md', 'utf8'));
+revealMDGen.getActionManager().getSlidesGenerator().getSlides().extractSlides(fs.readFileSync('slides.md', 'utf8'));
 
 // edit slides with prompt
-revealJSGen.generateSlides("Ubah halaman 4 jadi bentuk paragraf").then(() => {
+revealMDGen.generateSlides("Ubah halaman 4 jadi bentuk paragraf").then(() => {
 	console.log("Slides generated");
 
 	// write to markdown file
-	fs.writeFileSync('slides.md', revealJSGen.getActionManager().getSlidesGenerator().getSlides().getRawContent());
+	fs.writeFileSync('slides.md', revealMDGen.getActionManager().getSlidesGenerator().getSlides().getRawContent());
 });
 
 ```

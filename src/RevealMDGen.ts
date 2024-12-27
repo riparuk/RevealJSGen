@@ -1,7 +1,7 @@
 import ActionManager from './ActionManager';
 
 // Class for general generating handler
-class RevealJSGen {
+class RevealMDGen {
     private action_manager: ActionManager;
 
     constructor(action_manager = new ActionManager()) {
@@ -18,4 +18,4 @@ class RevealJSGen {
     }
 }
 
-export default RevealJSGen;
+export default RevealMDGen;
