@@ -1,0 +1,24 @@
+{
+  "name": "revealjs-gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "playground": "ts-node playground.ts",
+    "playground2": "ts-node playground2.ts"
+  },
+  "keywords": [],
+  "author": "riparuk",
+  "license": "ISC",
+  "description": "Reveal JS Markdown Generator",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.76.1",
+    "zod": "^3.24.1"
+  }
+}
