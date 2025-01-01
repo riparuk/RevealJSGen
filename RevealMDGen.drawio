@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.0.2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2054" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2285" dy="1994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -337,10 +337,10 @@
         <mxCell id="i7YnjvNjeRBu787a0NxW-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
           <mxGeometry y="52" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-9" value="+ getAllSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-15" value="+ addSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
           <mxGeometry y="60" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-15" value="+ addSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-9" value="+ getAllSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
           <mxGeometry y="86" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="i7YnjvNjeRBu787a0NxW-14" value="+ search(keyword)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
@@ -351,6 +351,18 @@
         </mxCell>
         <mxCell id="i7YnjvNjeRBu787a0NxW-11" value="+ getTools()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
           <mxGeometry y="164" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="i7YnjvNjeRBu787a0NxW-21" target="i7YnjvNjeRBu787a0NxW-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-21" value="User =&amp;gt; Buatkan slides tentang kemerdekaan indonesia =&amp;gt; RevealMDGen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="920" y="800" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-22" value="Skenario" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="950" y="730" width="127" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-23" value="RevealMD =&amp;gt; Memilih method pada SlidesGenerator untuk dijalankan =&amp;gt; Memilih Slides" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1171" y="800" width="140" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
