@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.0.2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2285" dy="1994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2123" dy="1902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="910" y="730" width="990" height="450" as="geometry" />
+        </mxCell>
         <mxCell id="t7L39CDLGECMZYHpMhQR-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="950" y="-100" width="1010" height="800" as="geometry" />
         </mxCell>
@@ -180,7 +183,7 @@
         <mxCell id="t7L39CDLGECMZYHpMhQR-3" value="+ isValidIndex(index) -&gt; bool" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-0" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-20" value="+ getSlides(index) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="t7L39CDLGECMZYHpMhQR-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-20" value="+ getSlides(index) -&gt; str" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-0" vertex="1">
           <mxGeometry y="86" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="t7L39CDLGECMZYHpMhQR-4" value="+ setSlides(index, content)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-0" vertex="1">
@@ -201,7 +204,7 @@
         <mxCell id="t7L39CDLGECMZYHpMhQR-52" value="+ getTools()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-0" vertex="1">
           <mxGeometry y="242" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t7L39CDLGECMZYHpMhQR-9" target="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t7L39CDLGECMZYHpMhQR-9" target="i7YnjvNjeRBu787a0NxW-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1500" y="256" />
@@ -218,7 +221,7 @@
         <mxCell id="t7L39CDLGECMZYHpMhQR-10" value="- Slides" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
           <mxGeometry y="26" width="190" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-19" value="- ActionManager" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="t7L39CDLGECMZYHpMhQR-9">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-19" value="- ActionManager" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
           <mxGeometry y="52" width="190" height="26" as="geometry" />
         </mxCell>
         <mxCell id="t7L39CDLGECMZYHpMhQR-11" value="- GPTClient" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
@@ -233,7 +236,7 @@
         <mxCell id="t7L39CDLGECMZYHpMhQR-15" value="+ slidesController(prompt)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
           <mxGeometry y="138" width="190" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-13" value="+ docsController(prompt)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="t7L39CDLGECMZYHpMhQR-9">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-13" value="+ docsController(prompt)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
           <mxGeometry y="164" width="190" height="26" as="geometry" />
         </mxCell>
         <mxCell id="t7L39CDLGECMZYHpMhQR-16" value="+ getTools()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="t7L39CDLGECMZYHpMhQR-9" vertex="1">
@@ -326,43 +329,183 @@
         <mxCell id="t7L39CDLGECMZYHpMhQR-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t7L39CDLGECMZYHpMhQR-15" target="t7L39CDLGECMZYHpMhQR-0" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-0" value="Documentation()" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-0" value="Documentation()" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1610" y="410" width="230" height="190" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-1" value="- section [{title, description, content}]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-1" value="- section [{title, description, content}]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="26" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="52" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-15" value="+ addSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-15" value="+ addSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="60" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-9" value="+ getAllSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-9" value="+ getAllSection()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="86" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-14" value="+ search(keyword)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-14" value="+ search(keyword)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="112" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-16" value="+ getSectionByTitle(title: string)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-16" value="+ getSectionByTitle(title: string)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="138" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-11" value="+ getTools()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i7YnjvNjeRBu787a0NxW-0">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-11" value="+ getTools()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i7YnjvNjeRBu787a0NxW-0" vertex="1">
           <mxGeometry y="164" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="i7YnjvNjeRBu787a0NxW-21" target="i7YnjvNjeRBu787a0NxW-23">
+        <mxCell id="i7YnjvNjeRBu787a0NxW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="i7YnjvNjeRBu787a0NxW-21" target="i7YnjvNjeRBu787a0NxW-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-21" value="User =&amp;gt; Buatkan slides tentang kemerdekaan indonesia =&amp;gt; RevealMDGen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="i7YnjvNjeRBu787a0NxW-21" target="Okh1CnVCtIvqu_MBKE2H-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="960" />
+              <mxPoint x="1140" y="960" />
+              <mxPoint x="1140" y="1055" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-21" value="User =&amp;gt; Buatkan slides tentang kemerdekaan indonesia, buat diagram, code, dan background warna hitam =&amp;gt; RevealMDGen" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="920" y="800" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-22" value="Skenario" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="950" y="730" width="127" height="60" as="geometry" />
+        <mxCell id="i7YnjvNjeRBu787a0NxW-22" value="Possible Skenario" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="950" y="730" width="300" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="i7YnjvNjeRBu787a0NxW-23" value="RevealMD =&amp;gt; Memilih method pada SlidesGenerator untuk dijalankan =&amp;gt; Memilih Slides" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1171" y="800" width="140" height="80" as="geometry" />
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="i7YnjvNjeRBu787a0NxW-23" target="Okh1CnVCtIvqu_MBKE2H-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-4" value="Content nya kapan di generate?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF3333;" vertex="1" connectable="0" parent="Okh1CnVCtIvqu_MBKE2H-3">
+          <mxGeometry x="-0.0444" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i7YnjvNjeRBu787a0NxW-23" value="RevealMDGen =&amp;gt; Memilih method pada SlidesGenerator untuk dijalankan =&amp;gt; Memilih SlidesController(prompt=&quot;buat slide presentasi dengan format yang rapi berisi tentang, indonesia, pahlawan, kemerdekaan, jepang&quot;)" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1171" y="800" width="189" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-0" value="SlidesController() =&amp;gt; Memilih method pada class Slides yang diperlukan untuk dijalankan =&amp;gt; Memilih extractSlides() karena pertama kali" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1560" y="800" width="189" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-1" value="RevealMDGen =&amp;gt; Memilih method pada docsController() untuk dijalankan =&amp;gt; Memilih SlidesController(prompt=&quot; tambah diagram batang, syntax code, ganti background&quot;)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1171" y="980" width="189" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-6" value="Masih tidak jelas, harusnya ia mendapatkan docs sebelum generate terlebih dahulu agar hasil generate sesuai" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1460" y="1000" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="910" y="1340" width="990" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-8" value="Flow Lebih Logic dan Sederhana" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="910" y="1260" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-9" value="User : buat slides presentasi background hitam tentang Artificial Intelligence" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="945" y="1360" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1110" y="1360" width="770" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-12" target="Okh1CnVCtIvqu_MBKE2H-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-12" value="Mendapatkan dokumentasi panduan penggunaan markdown revealjs berdasarkan keyword yang dicari (mis. background)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1130" y="1380" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-13" target="Okh1CnVCtIvqu_MBKE2H-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-13" value="Docs = [{title, description, content}] = ..." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1310" y="1380" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-14" value="Generate Pertama" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="975" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-15" target="Okh1CnVCtIvqu_MBKE2H-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-15" value="- Berdasarkan dokumentasi berikut : Docs[]&lt;div&gt;- Buatkan markdown slides tentang Artificial Inteligence dengan style background Hitam&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1484" y="1375" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-16" target="Okh1CnVCtIvqu_MBKE2H-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-16" value="&lt;div&gt;Generate :&amp;nbsp;&lt;br&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```Markdown&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;---&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1680" y="1375" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-17" value="extract hasil generate dan simpan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1690" y="1530" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="910" y="1690" width="1280" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-23" value="User : Edit halaman 5, buat lebih singkat, halaman 3 buat lebih panjang katanya" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="945" y="1710" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1110" y="1710" width="1040" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-29" value="Edit halaman tertentu sesuai kriteria diminta" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="1800" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-37" target="Okh1CnVCtIvqu_MBKE2H-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-37" value="Mendapatkan dokumentasi panduan penggunaan markdown revealjs berdasarkan keyword yang dibutuhkan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1130" y="1730" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-38" target="Okh1CnVCtIvqu_MBKE2H-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-38" value="Docs = [{title, description, content}] = ..." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1320" y="1730" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-40" value="&lt;b&gt;Untuk Halaman 5&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1147.5" y="1830" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-43" target="Okh1CnVCtIvqu_MBKE2H-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-43" value="- Berdasarkan dokumentasi berikut : Docs[]&lt;div&gt;- Edit halaman 5 markdown berikut, buat lebih singkat..&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Halaman 5 sekarang&lt;/div&gt;&lt;div&gt;```markdown&lt;/div&gt;&lt;div&gt;content...&lt;/div&gt;&lt;div&gt;```&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1514" y="1717.5" width="176" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Okh1CnVCtIvqu_MBKE2H-53" target="Okh1CnVCtIvqu_MBKE2H-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-53" value="&lt;div&gt;Generate :&amp;nbsp;&lt;br&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```Markdown&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;---&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1749" y="1725" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-55" value="extract dan masukin ke content halaman 5" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1970" y="1730" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Okh1CnVCtIvqu_MBKE2H-60" target="Okh1CnVCtIvqu_MBKE2H-62" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-60" value="Mendapatkan dokumentasi panduan penggunaan markdown revealjs berdasarkan keyword yang dibutuhkan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1130" y="1882.5" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Okh1CnVCtIvqu_MBKE2H-62" target="Okh1CnVCtIvqu_MBKE2H-65" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-62" value="Docs = [{title, description, content}] = ..." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1320" y="1882.5" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-63" value="&lt;b&gt;Untuk Halaman 6&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1147.5" y="1982.5" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Okh1CnVCtIvqu_MBKE2H-65" target="Okh1CnVCtIvqu_MBKE2H-67" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-65" value="- Berdasarkan dokumentasi berikut : Docs[]&lt;div&gt;- Edit halaman 5 markdown berikut, buat lebih panjang..&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Halaman 5 sekarang&lt;/div&gt;&lt;div&gt;```markdown&lt;/div&gt;&lt;div&gt;content...&lt;/div&gt;&lt;div&gt;```&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1514" y="1870" width="176" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="Okh1CnVCtIvqu_MBKE2H-67" target="Okh1CnVCtIvqu_MBKE2H-68" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-67" value="&lt;div&gt;Generate :&amp;nbsp;&lt;br&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```Markdown&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;---&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;content...&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 204, 153);&quot;&gt;```&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1749" y="1877.5" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Okh1CnVCtIvqu_MBKE2H-68" value="extract dan masukin ke content halaman 5" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1970" y="1882.5" width="150" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
