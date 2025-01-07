@@ -1,20 +1,91 @@
 import Slides from './Slides';
+import Documentation from './Documentation';
 import GPTClient from './GPTClient';
 import {extractMarkdownCodeBlock} from './utils';
+import ActionManager from './ActionManager';
+import Action from './Action';
 
-class SlidesGenerator {
-  private slides: Slides;
+class SlidesGenerator extends Action {
   private gptClient: GPTClient;
-  
-  constructor(slides: Slides = new Slides()) {
+  private slides: Slides;
+  private slidesManager: ActionManager;
+  private documentationManager: ActionManager;
+
+  constructor(slides: Slides = new Slides(), documentation: Documentation = new Documentation()) {
+	super();
 	this.slides = slides;
+	this.slidesManager = new ActionManager(this.slides);
+	this.documentationManager = new ActionManager(documentation);
 	this.gptClient = new GPTClient();
   }
 
-  getSlides(): Slides {
-	return this.slides;
+  private promptStructure(summary: string, docs: string, criteria: string, slides: string): string {
+	return `# Summary\n${summary}\n\n# Documentation\n${docs}\n\n# Criteria\n${criteria}\n\n# Slides\n${slides}`;
   }
 
+
+  getTools(): Array<any> {
+	const toolsList = [
+	  {
+		"type": "function",
+		"function": {
+		  "name": "generateSlidesAll",
+		  "description": "Generate All slides, good for first time",
+		  "strict": true,
+		  "parameters": {
+			"type": "object",
+			"required": ["prompt"],
+			"properties": {
+			  "prompt": { 
+				"type": "string", 
+				"description": "Prompt for generating slides" }
+			},
+			"additionalProperties": false
+		  }
+		}
+	  },
+	  {
+		"type": "function",
+		"function": {
+		  "name": "generateSlides",
+		  "description": "Generate slides for specific index",
+		  "strict": true,
+		  "parameters": {
+			"type": "object",
+			"required": ["index", "prompt"],
+			"properties": {
+			  "index": { "type": "number", "description": "Index of the slide" },
+			  "prompt": { "type": "string", "description": "Prompt for generating slides" }
+			},
+			"additionalProperties": false
+		  }
+		}
+	  },
+	  {
+		"type": "function",
+		"function": {
+		  "name": "generateSlidesBetween",
+		  "description": "Generate slides between start and end index",
+		  "strict": true,
+		  "parameters": {
+			"type": "object",
+			"required": ["startIndex", "endIndex", "prompt"],
+			"properties": {
+			  "startIndex": { "type": "number", "description": "Start index of the slide" },
+			  "endIndex": { "type": "number", "description": "End index of the slide" },
+			  "prompt": { "type": "string", "description": "Prompt for generating slides" }
+			},
+			"additionalProperties": false
+		  }
+		}
+	  }
+	];
+
+	return toolsList;
+
+  }
+  
+  // Tidak dipakai
   async generateSlidesAll(prompt: string) {
 	console.log("Generating Slides All, prompt : ", prompt);
 	const messages: Array<any> = [];
@@ -56,91 +127,40 @@ class SlidesGenerator {
 
   }
 
+  // Tidak dipakai
   async generateSlides(index: number, prompt: string) {
-	const messages: Array<any> = [];
+	const docs_messages: Array<any> = [];
+	const slides_messages: Array<any> = [];
 
 	// check if index is valid
 	if (this.slides.isValidIndex(index)) {
+	  console.log("Docs generating action...");
+	  docs_messages.push({"role": "system", "content": ""});
+	  docs_messages.push({"role": "user", "content": prompt});
 
-	  console.log("Generating Slides, index : ", index, " prompt : ", prompt);
-	  messages.push({"role": "system", "content": "You are an Intelligent bot for making presentations and understands the Reveal.js framework. You will edit only the provided slide content as specified. Always provide the results in markdown format that Reveal.js supported. Limit the result up to 50 words. Always start with ```markdown and end with ```"});
-	  messages.push({"role": "assistant", "content": `Slide ${index} : \n${this.slides.getSlides(index)}`});
-	  messages.push({"role": "user", "content": prompt});
+	  await this.documentationManager.generateAction(docs_messages);
+	  this.documentationManager.performAction();
 
-	  try {
-		console.log(`Generating content Slides ${index}...`);
-		const response = await this.gptClient.sendMessage(messages);
-		const result = this.gptClient.handleResponse(response);
 
-		if (typeof result === "string") {
-		  // extract markdown code
-		  const markdown = extractMarkdownCodeBlock(result);
-		  console.log("Message response: ", result);
-		  console.log("Extracted markdown code: ", markdown);
+	  // ========================================
 
-		  // update slide content
-		  console.log("Changing slide content...");
-		  if (markdown === null) {
-			console.log("No markdown code block found");
-		  } else {
-			this.slides.setSlides(index, markdown);
-		  }
+	  console.log("Slides generating action...");
+	  slides_messages.push({"role": "system", "content": ""});
+	  slides_messages.push({"role": "assistant", "content": `Slide ${index} : \n${this.slides.getSlides(index)}`});
+	  slides_messages.push({"role": "user", "content": prompt});
 
-		} else {
-		  console.log("The result should not be a ToolInterface[]");
-		}
+	  await this.slidesManager.generateAction(slides_messages);
+	  this.slidesManager.performAction();
 
-	  } catch (error) {
-		console.error("Error in generateSlides:", error);
-	  }
 
 	} else {
 	  console.log(`Index ${index} is not valid`);
 	}
   }
 
-  getTools(): Array<any> {
-	const toolsList = [
-	  {
-		"type": "function",
-		"function": {
-		  "name": "generateSlidesAll",
-		  "description": "Generate All slides, good for first time",
-		  "strict": true,
-		  "parameters": {
-			"type": "object",
-			"required": ["prompt"],
-			"properties": {
-			  "prompt": { 
-				"type": "string", 
-				"description": "Prompt for generating slides" }
-			},
-			"additionalProperties": false
-		  }
-		}
-	  },
-	  {
-		"type": "function",
-		"function": {
-		  "name": "generateSlides",
-		  "description": "Generate slides for specific index",
-		  "strict": true,
-		  "parameters": {
-			"type": "object",
-			"required": ["index", "prompt"],
-			"properties": {
-			  "index": { "type": "number", "description": "Index of the slide" },
-			  "prompt": { "type": "string", "description": "Prompt for generating slides" }
-			},
-			"additionalProperties": false
-		  }
-		}
-	  },
-	];
-
-	return toolsList;
-
+  async generateSlidesBetween(startIndex: number, endIndex: number, prompt: string) {
   }
+
 }
 
 export default SlidesGenerator;

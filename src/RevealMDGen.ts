@@ -1,21 +1,31 @@
 import ActionManager from './ActionManager';
+import SlidesGenerator from './SlidesGenerator';
 
 // Class for general generating handler
 class RevealMDGen {
-    private action_manager: ActionManager;
+  private slidesGeneratorManager: ActionManager;
 
-    constructor(action_manager = new ActionManager()) {
-        this.action_manager = action_manager;
-    }
+  constructor(slidesGenerator = new SlidesGenerator()) {
+	this.slidesGeneratorManager = new ActionManager(slidesGenerator)
+  }
 
-    async generateSlides(prompt: string) {
-		await this.action_manager.generateAction(prompt);
-		await this.action_manager.performAction();
-    }
+  async generate(prompt: string) {
+	// For SlidesGenerator
+	const messages: Array<any> = [];
 
-    getActionManager(): ActionManager {
-        return this.action_manager;
-    }
+	// intruksikan bot untuk bisa membuat prompt yang baik (kriteria dan style yang dibutuhkan) dan bisa memilih tools dari SlidesGenerator sesuai yang diminta
+	messages.push({"role": "system", "content": "You are an Intelligent bot for making presentations and understands the Reveal.js framework. ..."});
+	messages.push({"role": "user", "content": prompt});
+
+	await this.slidesGeneratorManager.generateAction(messages);
+	this.slidesGeneratorManager.performAction();
+
+  }
+
+  getSlidesGeneratorManager(): ActionManager {
+	return this.slidesGeneratorManager;
+  }
+
 }
 
 export default RevealMDGen;

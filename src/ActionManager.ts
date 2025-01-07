@@ -1,26 +1,23 @@
-import SlidesGenerator from './SlidesGenerator';
 import GPTClient from './GPTClient';
 import ToolInterface from './interfaces/ToolInterface';
+import Action from './Action';
 
 class ActionManager {
   private actions: Array<ToolInterface>;
   private gptClient: GPTClient;
-  private slides_generator: SlidesGenerator;
+  private instance: Action;
 
-  constructor(slides_generator: SlidesGenerator = new SlidesGenerator()) {
+  constructor(instance: Action) {
 	this.actions = [];
+	this.instance = instance;
 	this.gptClient = new GPTClient();
-	this.slides_generator = slides_generator;
   }
 
-  async generateAction(prompt: string) {
-	const messages: Array<any> = [];
-	messages.push({"role": "system", "content": `You are an Intelligent bot for making presentations, user may ask to to create full presentation or edit existing presentation. if user ask for the first time or want to edit the wohole presentation, provide generateSlidesAll(). If user ask for edit presentation, provide generateSlides(), index refer page/slide number. If user ask in advance, provide one or more function to call. keep what is requested in the request`});
-	messages.push({"role": "user", "content": `Request : ${prompt}`});
+  async generateAction(messages: Array<any>) {
 
 	try {
 	  console.log("Generating action...");
-	  const response = await this.gptClient.sendMessage(messages, this.slides_generator.getTools());
+	  const response = await this.gptClient.sendMessage(messages, this.instance.getTools());
 	  const result = this.gptClient.handleResponse(response);
 
 	  // if string means the response is a message, if array means the response is a tool call
@@ -35,28 +32,28 @@ class ActionManager {
 	}
   }
 
-  async performAction() {	
+  performAction() {	
 	if (this.actions.length === 0) {
 	  console.log("No action to perform");
 	  return;
 	} else {
-	  console.log("Performing action");
-	  for (let action of this.actions) {
-		if (action.name === "generateSlidesAll") {
-		  console.log("Calling generateSlidesAll");
-		  await this.slides_generator.generateSlidesAll(action.arguments.prompt);
-		}
-		if (action.name === "generateSlides") {
-		  console.log("Calling generateSlides", action);
-		  await this.slides_generator.generateSlides(action.arguments.index, action.arguments.prompt);
-		}
+	  this.actions.forEach((action: ToolInterface) => {
+		console.log("Performing action: ", action);
+		this.callDynamicMethod(action.name, action.arguments);
 	  }
+	  );
 	}
   }
 
-  getSlidesGenerator(): SlidesGenerator {
-	return this.slides_generator;
-  }
+  private callDynamicMethod(methodName: string, ...args: any[]): void {
+        // Periksa apakah metode ada pada instance dan merupakan fungsi
+        if (typeof (this.instance as any)[methodName] === "function") {
+            const result = (this.instance as any)[methodName](...args); // Memanggil metode
+            console.log(result);
+        } else {
+            console.log(`Method "${methodName}" not found on the class instance.`);
+        }
+    }
 
 }
 

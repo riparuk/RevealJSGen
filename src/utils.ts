@@ -15,3 +15,7 @@ export function splitMarkdownBySeparator(markdown: string): string[] {
   // Memisahkan string berdasarkan pemisah '---' dan menghapus spasi tambahan
   return markdown.split('---').map(item => item.trim()).filter(item => item.length > 0);
 }
+
+export function toMarkdownCodeBlock(text: string): string {
+	return '```markdown\n' + text + '\n```';
+}
